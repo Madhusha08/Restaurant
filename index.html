@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>South Indian Food</title>
+	<link href="image/icon.jpg" rel="icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<span class="flaticon-rice-1 mr-1"></span>South Indian<br>
+				<small>Food</small>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+					<li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+					<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<style>
+		.nav-link {
+			text-decoration: none;
+			/* remove underline */
+			color: black;
+			/* default color */
+			font-weight: normal;
+		}
+	</style>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const navLinks = document.querySelectorAll('#ftco-nav .nav-link');
+
+			navLinks.forEach(link => {
+				link.addEventListener('click', function (e) {
+					const href = this.getAttribute('href');
+
+					if (href === 'index.html') {
+						e.preventDefault();
+						window.scrollTo({ top: 0, behavior: 'smooth' });
+					}
+
+					navLinks.forEach(nav => {
+						nav.style.setProperty('color', 'white', 'important');
+						nav.style.fontWeight = 'normal';
+					});
+
+					this.style.setProperty('color', 'yellow', 'important');
+					this.style.fontWeight = 'bold';
+				});
+			});
+		});
+	</script>
+
+	<!-- END nav -->
+
+	<section class="home-slider owl-carousel img" style="background-image: url(image/back2.jpg);">
+		<div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text align-items-center" data-scrollax-parent="true">
+
+					<div class="col-md-6 col-sm-12 ftco-animate">
+						<span class="subheading">Yummy</span>
+						<h1 class="mb-4">Vadai And Sambal</h1>
+						<p class="mb-4 mb-md-5">Vadai is a crispy lentil fritter, perfectly paired with spicy sambol for
+							a burst of bold flavor</p>
+						<p> <a href="#menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a>
+						</p>
+					</div>
+					<div class="col-md-6 ftco-animate">
+						<img src="image/vadai.jpg" class="img-fluid" alt=""
+							style="width: 400px; height: 400px; object-fit: cover; border-radius: 50%; padding-left: 20px;">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text align-items-center" data-scrollax-parent="true">
+
+					<div class="col-md-6 col-sm-12 order-md-last ftco-animate">
+						<span class="subheading">Crunchy</span>
+						<h1 class="mb-4">Dosa</h1>
+						<p class="mb-4 mb-md-5">Dosa is a thin, crispy South Indian crepe made from fermented rice and
+							urad dal batter, often served with chutney and sambar</p>
+						<p> <a href="#menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a>
+						</p>
+					</div>
+					<div class="col-md-6 ftco-animate">
+						<img src="image/dhosai.jpg" class="img-fluid" alt=""
+							style="width: 400px; height: 400px; object-fit: cover; border-radius: 50%; padding-left: 20px;">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-item" style="background-image: url(image/back2.jpg);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+					<div class="col-md-7 col-sm-12 text-center ftco-animate">
+						<span class="subheading">Welcome</span>
+						<h1 class="mb-4">"We Cook To Satisfy Your Hunger "</h1>
+						<p> <a href="#menu" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section><br><br>
+
+
+
+	<section class="ftco-about d-md-flex" id="about">
+		<div class="one-half img" style="background-image: url(image/table.jpg);"></div>
+		<div class="one-half ftco-animate">
+			<div class="heading-section ftco-animate ">
+				<h2 class="mb-4">Welcome to <span style="color: rgb(246, 226, 8);">South Indian </span> Restaurant</h2>
+			</div>
+			<div>
+				<p>Welcome to our South Indian restaurant, where tradition meets taste! We serve authentic dishes like
+					dosa, idli, vadai, and flavorful sambols, all made with fresh ingredients and love. Come enjoy the
+					rich spices and warm hospitality of South India on your plate.</p>
+			</div>
+		</div>
+	</section><br><br>
+
+	<section class="ftco-section " style="background-image: url(image/back1.jpg);" id="services">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4" style="color: black;">Our Services</h2>
+					<p style="color: brown; font-weight: bold;">Serving fresh, flavorful meals in a warm and welcoming
+						atmosphere. Great food, friendly service, and something for everyone.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ftco-animate">
+					<div class="media d-block text-center block-6 services">
+						<div class="icon d-flex justify-content-center align-items-center mb-5">
+							<span class="flaticon-diet"></span>
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Healthy Foods</h3>
+							<p style="color: rgb(225, 164, 22); font-weight:bold;">Wholesome, delicious meals made with
+								fresh, natural ingredients. Healthy eating made simple and satisfying</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="media d-block text-center block-6 services">
+						<div class="icon d-flex justify-content-center align-items-center mb-5">
+							<span class="flaticon-bicycle"></span>
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Fastest Delivery</h3>
+							<p style="color: rgb(225, 164, 22); font-weight:bold;">Authentic South Indian food delivered
+								hot and fresh—fast, flavorful, and right to your doorstep!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="media d-block text-center block-6 services">
+						<div class="icon d-flex justify-content-center align-items-center mb-5"><span
+								class="flaticon-pizza-1"></span></div>
+						<div class="media-body">
+							<h3 class="heading">Original Recipes</h3>
+							<p style="color: rgb(225, 164, 22); font-weight:bold;">Enjoy home-style South Indian meals
+								made from authentic recipes—fresh, flavorful, and delivered quick!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" style="background-image: url(image/blue.jpg);" id="menu">
+
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<h2 class="mb-4">South Indian Meals</h2>
+					<p style="color: antiquewhite;">A traditional South Indian meal served with rice, sambar, rasam,
+						vegetable curry, curd, pickle, and papad. A wholesome and satisfying combination of flavors.</p>
+				</div>
+			</div>
+		</div>
+		<style>
+			.pricing-entry .text h3 span,
+			.pricing-entry .price {
+				background: none !important;
+				padding: 0 !important;
+				box-shadow: none !important;
+				font-weight: bold;
+			}
+		</style>
+		<div class="container-wrap">
+			<div class="row no-gutters d-flex">
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(image/pannir.jpg);"></a>
+						<div class="text p-4">
+							<h3>Pannir Butter Masala</h3>
+							<p style="color: antiquewhite;">Creamy, buttery, and mildly spiced paneer curry — perfect
+								with naan or rice. </p>
+							<p class="price"><span>RS 500.00</span> <a href="#"></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(image/prawn.jpg);"></a>
+						<div class="text p-4">
+							<h3>Prawn curry</h3>
+							<p style="color: antiquewhite;">Tender prawns simmered in a rich, spicy coconut-based curry.
+								Bold and delicious</p>
+							<p class="price"><span>RS 600.00</span> <a href="#"></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img" style="background-image: url(image/mutton.jpg);"></a>
+						<div class="text p-4">
+							<h3>Mutton Gravy</h3>
+							<p style="color: antiquewhite;">Tender mutton pieces slow-cooked in a rich, spicy gravy made
+								with onions, tomatoes, and traditional South Indian spices. Full of flavor and perfect
+								with rice or parotta</p>
+							<p class="price"><span>RS 700.00</span> <a href="#"></a></p>
+						</div>
+					</div>
+				</div><br>
+
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img order-lg-last" style="background-image: url(image/chicken.jpg);"></a>
+						<div class="text p-4">
+							<h3>Chettinad Chicken Curry</h3>
+							<p style="color: antiquewhite;">Traditional Chettinad chicken curry with bold spices, black
+								pepper, and rich southern flavor </p>
+							<p class="price"><span>RS 500.00</span> <a href="#"></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img order-lg-last" style="background-image: url(image/crap.jpg);"></a>
+						<div class="text p-4">
+							<h3>Crab Curry </h3>
+							<p style="color: antiquewhite;">Fresh crab cooked in a spicy, aromatic gravy with
+								coastal-style masalas. Rich, flavorful, and finger-licking good!</p>
+							<p class="price"><span>RS 400.00</span> <a href="#"></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 d-flex ftco-animate">
+					<div class="services-wrap d-flex">
+						<a href="#" class="img order-lg-last" style="background-image: url(image/fish.jpg);"></a>
+						<div class="text p-4">
+							<h3>Chettinad Fish Curry</h3>
+							<p style="color: antiquewhite;">Tender fish cooked in a fiery Chettinad masala with rich
+								spices and tamarind.</p>
+							<p class="price"><span>RS 400.00</span> <a href="#"></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3 mt-5 pt-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Our Menu Pricing</h2>
+					<p class="flip"><span class="deg1"></span><span class="deg2"></span><span class="deg3"></span></p>
+					<p class="mt-5" style="color: antiquewhite;">Breakfast , Lunch , Dinner</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(image/appam.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Aappam With Sambol</span></h3>
+								<span class="price">RS 50.00</span>
+							</div>
+							<div class="d-block">
+								<p style="color: antiquewhite;">Soft, lacy South Indian aappam served with spicy,
+									flavorful onion or coconut sambol. Light, crispy, and full of taste!</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(image/pittu.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Pittu With Gravy and coconut Milk</span></h3>
+								<span class="price">RS 150.00</span>
+							</div>
+							<div class="d-block">
+								<p style="color: antiquewhite;">A hearty meal of pittu, spicy curry, and smooth coconut
+									milk</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(image/poori.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Poori With Kadalai Curry</span></h3>
+								<span class="price">RS 150.00</span>
+							</div>
+							<div class="d-block">
+								<p style="color: antiquewhite;">Deep-fried poori served with spiced black chana gravy
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(image/idli.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Idli with Chutney</span></h3>
+								<span class="price">RS 150.00</span>
+							</div>
+							<div class="d-block">
+								<p style="color: antiquewhite;">Fluffy idlis with creamy coconut chutney</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(image/paniyaram.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Kulipaniyaram</span></h3>
+								<span class="price">RS 250.00</span>
+							</div>
+							<div class="d-block">
+								<p style="color: antiquewhite;">A small river named Duden flows by their place and
+									supplies</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(image/idiyappam.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Idiyappam With Pol Sambol</span></h3>
+								<span class="price">RS 170.00</span>
+							</div>
+							<div class="d-block">
+								<p style="color: antiquewhite;">Traditional idiyappam served with freshly ground pol
+									sambol </p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(image/rotti.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Rotti With Pol Sambol &amp; Curry</span></h3>
+								<span class="price">RS 150.00</span>
+							</div>
+							<div class="d-block">
+								<p style="color: antiquewhite;">Freshly made rotti paired with fiery pol sambol and rich
+									curry</p>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-entry d-flex ftco-animate">
+						<div class="img" style="background-image: url(image/paratta.jpg);"></div>
+						<div class="desc pl-3">
+							<div class="d-flex text align-items-center">
+								<h3><span>Parotta With Salna</span></h3>
+								<span class="price">RS 200.00</span>
+							</div>
+							<div class="d-block">
+								<p style="color: antiquewhite;">Crispy parotta paired with flavorful salna gravy</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-gallery">
+		<div class="container-wrap">
+			<div class="row no-gutters">
+				<div class="col-md-3 ftco-animate">
+					<a href="#" class="gallery img d-flex align-items-center"
+						style="background-image: url(image/customer1.jpg);">
+						<div class=" mb-4 d-flex align-items-center justify-content-center">
+
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="#" class="gallery img d-flex align-items-center"
+						style="background-image: url(image/cus2.jpg);">
+						<div class=" mb-4 d-flex align-items-center justify-content-center">
+
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="#" class="gallery img d-flex align-items-center"
+						style="background-image: url(image/table2.jpg);">
+						<div class=" mb-4 d-flex align-items-center justify-content-center">
+
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="#" class="gallery img d-flex align-items-center"
+						style="background-image: url(image/table3.jpg);">
+						<div class="mb-4 d-flex align-items-center justify-content-center">
+
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(image/tables.jpg);"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<div class="row">
+
+						<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18 text-center">
+								<div class="text">
+									<div class="icon"><span class="flaticon-medal"></span></div>
+									<strong class="number" data-number="85">0</strong>
+									<span>Number of Awards</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18 text-center">
+								<div class="text">
+									<div class="icon"><span class="flaticon-laugh"></span></div>
+									<strong class="number" data-number="10567">0</strong>
+									<span>Happy Customer</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 d-flex justify-content-center counter-wrap ftco-animate">
+							<div class="block-18 text-center">
+								<div class="text">
+									<div class="icon"><span class="flaticon-chef"></span></div>
+									<strong class="number" data-number="200">0</strong>
+									<span>Staff</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<section style="position: relative; background-image: url(image/wood.jpg); padding: 50px 0;" id="contact">
+		<!-- Overlay -->
+		<div
+			style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: rgba(0,0,0,0.1); z-index: 1;">
+		</div>
+
+		<div style="position: relative; z-index: 2; max-width: 1200px; margin: auto; padding: 0 20px;">
+			<div style="display: flex; flex-wrap: wrap; align-items: center;">
+
+
+
+				<!-- Form (Right Side) -->
+				<div style="flex: 1 1 50%; display: flex; justify-content: center; align-items: center; padding: 30px;"
+					id="contact">
+					<div
+						style="background-color: rgba(231, 18, 18, 0.233); padding: 30px; border-radius: 10px; width: 100%; max-width: 400px;">
+						<h3 style="margin-bottom: 20px; font-size: 24px; color: #f5eded; text-align: center;">Contact Us
+						</h3>
+
+						<form action="#" style="display: flex; flex-direction: column; gap: 15px;">
+							<!-- First Name -->
+							<input type="text" placeholder="First Name"
+								style="width: 100%; padding: 10px 15px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+
+							<!-- Last Name -->
+							<input type="text" placeholder="Last Name"
+								style="width: 100%; padding: 10px 15px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;">
+
+							<!-- Message -->
+							<textarea placeholder="Message" rows="4"
+								style="width: 100%; padding: 10px 15px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+
+							<!-- Submit Button -->
+							<input type="submit" value="Send"
+								style="background-color: #dca47d; color: white; padding: 12px 25px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">
+						</form>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer style="background: #1c1e21; color: #ddd; padding: 60px 20px 30px; font-family: 'Segoe UI', sans-serif;">
+		<div style="max-width: 1200px; margin: auto;">
+
+			<!-- Main Footer Content -->
+			<div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between;">
+
+				<!-- About Us -->
+				<div style="flex: 1 1 30%; min-width: 250px;">
+					<h3 style="color: #fff; margin-bottom: 20px; font-size: 20px;">About Us</h3>
+					<p style="font-size: 15px; line-height: 1.8;">We bring delicious food to your doorstep. Quality and
+						satisfaction are our top priorities.</p>
+
+				</div>
+
+				<!-- Services -->
+				<div style="flex: 1 1 30%; min-width: 250px;">
+					<h3 style="color: #fff; margin-bottom: 20px; font-size: 20px;">Services</h3>
+					<ul style="list-style: none; padding: 0;">
+						<li><a href="#"
+								style="text-decoration: none; color: #bbb; font-size: 15px; line-height: 1.8;">Cooked</a>
+						</li>
+						<li><a href="#"
+								style="text-decoration: none; color: #bbb; font-size: 15px; line-height: 1.8;">Deliver</a>
+						</li>
+						<li><a href="#"
+								style="text-decoration: none; color: #bbb; font-size: 15px; line-height: 1.8;">Quality
+								Foods</a></li>
+						<li><a href="#"
+								style="text-decoration: none; color: #bbb; font-size: 15px; line-height: 1.8;">Mixed</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Contact -->
+				<div style="flex: 1 1 30%; min-width: 250px;">
+					<h3 style="color: #fff; margin-bottom: 20px; font-size: 20px;">Contact</h3>
+					<ul style="list-style: none; padding: 0;">
+						<li style="font-size: 15px; line-height: 1.8;"><span style="margin-right: 10px;">📍</span>No 10
+							, Main Street , Colombo , Sri Lanka</li>
+						<li style="font-size: 15px; line-height: 1.8;"><span style="margin-right: 10px;">📞</span>011
+							2228 456</li>
+						<li style="font-size: 15px; line-height: 1.8;"><span
+								style="margin-right: 10px;">✉️</span>SoiuthIndian@gmail.com</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<!-- Bottom Line -->
+			<div
+				style="text-align: center; margin-top: 40px; font-size: 14px; border-top: 1px solid #333; padding-top: 20px;">
+				<p>&copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved |Design
+					<span style="color: #ff4b5c;">❤</span> by
+					<a href="https://WEBbuilders.lk" target="_blank" style="color: #339af0; text-decoration: none;">
+						WEBbuilders.lk</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
